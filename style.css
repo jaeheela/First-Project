@@ -18,7 +18,6 @@ li{
     margin: 0 auto;
 }
 header{
-    background-color: black;
     width: 100%;
     position: absolute;
     color: black;
@@ -32,4 +31,27 @@ header .container{
     justify-content: space-between;
     align-items: center;
     width:100%;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin: 10px;
+}
+
+header button {
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+header h1 button{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul li button{
+    font-size: 1.2rem;
 }
