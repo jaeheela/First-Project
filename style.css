@@ -263,3 +263,34 @@ section .do-me .do-inner:hover i{
     background-size: cover;
     background-attachment: fixed;
 }
+
+section .portfolio-me{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section .portfolio-me .portfolio-inner{
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 1rem 1rem 1.5rem 1rem;
+    border: 1px solid #ccc;
+    margin-bottom: 3rem;
+}
+
+section .portfolio-me .portfolio-inner img{
+    width: 300px;
+    height: 200px;
+    max-width: 100%;
+    /*이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정*/
+}
+
+/*strong 태그 색상과 간격*/
+section .portfolio-me .portfolio-inner strong{
+    color: #ff6a6a;
+    margin: 0.5rem 0;
+}
+/*h3 태그 색상과 간격*/
+section .portfolio-me .portfolio-inner h3{
+    font-size: 1.75rem;
+}
