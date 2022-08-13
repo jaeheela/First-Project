@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -19,8 +21,7 @@ li{
 }
 header{
     width: 100%;
-    position: absolute;
-    color: black;
+    position: fixed;
     top:0;
     z-index: 1;
     padding: 1rem;
@@ -45,6 +46,7 @@ header button {
     background-color: transparent;
     border-style: none;
     cursor: pointer;
+    color: white;
 }
 
 header h1 button{
@@ -63,4 +65,81 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80');
+    /* background-image: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8));
+    background-image: url('https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80'); */
+    background-position:center;
+    background-size: cover;
+    /* background: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80') center; */
+    color: white;
+}
+
+main h4{
+    font-size: 2rem;
+}
+main h2{
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    font-family: 'Varela Round', sans-serif;
+}
+main p{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+main button.download{
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main button.mouse{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation: upDown 1s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes upDown {
+    0%{
+        bottom: 1rem;
+    }
+    50%{
+        bottom: 1.5rem;
+    }
+    100%{
+        bottom: 1rem;
+    }
+}
+
+main h2 span::after{
+    content:"";
+    height: 40px;
+    width:3px;
+    background-color:#fff;
+    display: inline-block;
+    animation: blink 0.7s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
