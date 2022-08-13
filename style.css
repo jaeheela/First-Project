@@ -25,6 +25,7 @@ header{
     top:0;
     z-index: 1;
     padding: 1rem;
+    background-color: #000;
 }
 
 header .container{
@@ -293,4 +294,97 @@ section .portfolio-me .portfolio-inner strong{
 /*h3 태그 색상과 간격*/
 section .portfolio-me .portfolio-inner h3{
     font-size: 1.75rem;
+}
+
+
+/* clear속성으로 float속성값 해제 */
+/* section.contact .contact-me::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section.contact .contact-me .left{
+    width: 30%;
+    float: left;
+}
+section.contact .contact-me .right{
+    width: 65%;
+    float: left;
+    margin-left:5%;
+} */
+
+section.contact .contact-me{
+    display: flex;
+    justify-content: space-between;
+}
+section.contact .contact-me .left{
+    width: 30%;
+}
+section.contact .contact-me .right{
+    width: 65%;
+}
+
+section.contact .contact-me .left .card{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+section.contact .contact-me .left .card .icon i{
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+
+
+section.contact .contact-me .right form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+section.contact .contact-me .right .form-group{
+    margin-bottom: 1.25rem;
+}
+section.contact .contact-me .right .form-group label{
+    display: block;
+}
+
+/*input요소, textarea요소, button요소 꾸미기*/
+section.contact .contact-me .right .form-group input{
+    width: 100%;
+    padding:10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+section.contact .contact-me .right .form-group textarea{
+    width: 100%;
+    padding:10px;
+    resize: none;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+section.contact .contact-me .right button{
+    width: 100%;
+    padding: 1rem;
+    background-color: #f78b00;
+    color: #fff;
+    border: none;
+}
+
+/*요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가*/
+section.contact .contact-me .right .form-group input:focus{
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+section.contact .contact-me .right .form-group textarea:focus{
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+/*요소에 커서를 갖다대면 배경색 변경*/
+section.contact .contact-me .right button:hover{
+    background-color: #f7b55e;
 }
