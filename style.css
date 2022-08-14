@@ -1,45 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a, a:visited, a:link{
+a,
+a:visited,
+a:link {
     color: inherit;
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.container{
+.container {
     width: 1140px;
     margin: 0 auto;
 }
-header{
+
+header {
     width: 100%;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 1;
     padding: 1rem;
     background-color: #000;
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    width: 100%;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
 }
 
-header nav ul li{
+header nav ul li {
     margin: 10px;
 }
 
@@ -50,47 +53,49 @@ header button {
     color: white;
 }
 
-header h1 button{
+header h1 button {
     font-size: 2rem;
     font-weight: bold;
 }
 
-header nav ul li button{
+header nav ul li button {
     font-size: 1.2rem;
 }
 
-main{
-    width:100%;
+main {
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80');
     /* background-image: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8));
     background-image: url('https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80'); */
-    background-position:center;
+    background-position: center;
     background-size: cover;
     /* background: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80') center; */
     color: white;
 }
 
-main h4{
+main h4 {
     font-size: 2rem;
 }
-main h2{
+
+main h2 {
     font-size: 3.5rem;
     margin: 2rem 0;
     letter-spacing: 3px;
     font-family: 'Varela Round', sans-serif;
 }
-main p{
+
+main p {
     max-width: 500px;
     margin: 0 auto;
     font-size: 1.25rem;
 }
 
-main button.download{
+main button.download {
     background-color: transparent;
     border: 3px solid white;
     padding: 1rem 2rem;
@@ -101,7 +106,7 @@ main button.download{
     cursor: pointer;
 }
 
-main button.mouse{
+main button.mouse {
     background-color: transparent;
     border: none;
     color: white;
@@ -116,116 +121,129 @@ main button.mouse{
 }
 
 @keyframes upDown {
-    0%{
+    0% {
         bottom: 1rem;
     }
-    50%{
+
+    50% {
         bottom: 1.5rem;
     }
-    100%{
+
+    100% {
         bottom: 1rem;
     }
 }
 
-main h2 span::after{
-    content:"";
+main h2 span::after {
+    content: "";
     height: 40px;
-    width:3px;
-    background-color:#fff;
+    width: 3px;
+    background-color: #fff;
     display: inline-block;
     animation: blink 0.7s ease-in-out infinite;
 }
 
 @keyframes blink {
-    0%{
+    0% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
+
 /*모든 섹션의 기본 적용값*/
-section{
+section {
     font-family: 'Poppins', sans-serif;
     padding: 5rem 0;
 }
-section:nth-child(2n){
+
+section:nth-child(2n) {
     background-color: #f8f8f8;
 }
-section .title{
+
+section .title {
     margin-bottom: 3rem;
 }
-section .title h4{
+
+section .title h4 {
     font-size: 1.35rem;
     color: #ed4848;
 }
-section .title h2{
+
+section .title h2 {
     font-size: 3.5rem;
 }
-section .title p{
+
+section .title p {
     font-size: 1.15rem;
 }
+
 /*모든 섹션의 기본 적용값*/
 
 
 /*float속성해제*/
-section .about-self::after{
-    content:"";
-    clear:both;
-    display:block;
+section .about-self::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 /*본문 너비 절반 지정 & 왼쪽 배치 */
-section .about-self .left{
+section .about-self .left {
     width: 50%;
-    float:left;
+    float: left;
 }
 
 /*이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정*/
-section .about-self .left img{
+section .about-self .left img {
     max-width: 100%;
 }
 
 /*본문 너비 절반 지정 & 오른쪽 배치*/
-section .about-self .right{
+section .about-self .right {
     width: 50%;
     float: left;
     padding: 0 2rem;
 }
 
 /*본문 오른쪽 h3 태그의 글자 크기와 여백 지정*/
-section .about-self .right h3{
+section .about-self .right h3 {
     font-size: 2.25rem;
     margin-bottom: 1rem;
 }
+
 /*본문 오른쪽 h3 태그의 strong 태그 색상 강조*/
-section .about-self .right h3 strong{
+section .about-self .right h3 strong {
     color: #ed4848;
 }
+
 /*본문 오른쪽 p 태그의 크기와 여백 지정*/
-section .about-self .right p{
+section .about-self .right p {
     font-size: 1.15rem;
     margin: 1rem 0;
 }
+
 /*본문 오른쪽 p 태그 scroll 만들어주기*/
-section .about-self .right .sentence{
+section .about-self .right .sentence {
     width: 100%;
     height: 220px;
     overflow: scroll;
 }
 
 /*본문 오른쪽의 아이콘 폰트 크기와 여백 지정*/
-section .about-self .right .social a{
+section .about-self .right .social a {
     font-size: 2.5rem;
     margin-right: 1.2rem;
 }
 
-section .do-me{
+section .do-me {
     display: flex;
     justify-content: space-between;
 }
 
-section .do-me .do-inner{
+section .do-me .do-inner {
     background-color: #fff;
     width: 30%;
     padding: 2rem;
@@ -234,65 +252,73 @@ section .do-me .do-inner{
 
 
 /*아이콘 폰트 크기와 색상*/
-section .do-me .do-inner .icon i{
+section .do-me .do-inner .icon i {
     font-size: 2.5rem;
     color: #ff6a6a;
 }
+
 /*HTML5, CSS3, Bootstrap v5.0 텍스트 크기와 간격*/
-section .do-me .do-inner .content h3{
+section .do-me .do-inner .content h3 {
     font-size: 2rem;
     margin: 1rem 0;
 }
+
 /*사각형 텍스트 크기*/
-section .do-me .do-inner .content p{
+section .do-me .do-inner .content p {
     font-size: 1.15rem;
 }
+
 /*do-inner 클래스에 마우스를 올리면 배경색과 텍스트 색상 변경*/
-section .do-me .do-inner:hover{
+section .do-me .do-inner:hover {
     background-color: lightcoral;
     color: white;
 }
+
 /*do-inner 클래스에 마우스를 올리면 아이콘 폰트 색상 변경*/
-section .do-me .do-inner:hover i{
+section .do-me .do-inner:hover i {
     color: white;
 }
 
-.bg{
+.bg {
     background-image: url('https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1460&q=80');
-    height:650px;
-    background-position: center center;
+    height: 650px;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-section .portfolio-me{
+section .portfolio-me {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-section .portfolio-me .portfolio-inner{
+
+section .portfolio-me .portfolio-inner {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 30%;
     background-color: #f8f8f8;
     padding: 1rem 1rem 1.5rem 1rem;
     border: 1px solid #ccc;
     margin-bottom: 3rem;
 }
 
-section .portfolio-me .portfolio-inner img{
-    width: 300px;
-    height: 200px;
+section .portfolio-me .portfolio-inner img {
+    width: 250px;
+    height: 300px;
     max-width: 100%;
     /*이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정*/
 }
 
 /*strong 태그 색상과 간격*/
-section .portfolio-me .portfolio-inner strong{
+section .portfolio-me .portfolio-inner strong {
     color: #ff6a6a;
     margin: 0.5rem 0;
 }
+
 /*h3 태그 색상과 간격*/
-section .portfolio-me .portfolio-inner h3{
+section .portfolio-me .portfolio-inner h3 {
     font-size: 1.75rem;
 }
 
@@ -313,61 +339,68 @@ section.contact .contact-me .right{
     margin-left:5%;
 } */
 
-section.contact .contact-me{
+section.contact .contact-me {
     display: flex;
     justify-content: space-between;
 }
-section.contact .contact-me .left{
+
+section.contact .contact-me .left {
     width: 30%;
 }
-section.contact .contact-me .right{
+
+section.contact .contact-me .right {
     width: 65%;
 }
 
-section.contact .contact-me .left .card{
+section.contact .contact-me .left .card {
     border: 1px solid #ccc;
     padding: 1rem;
     margin-bottom: 1.25rem;
     display: flex;
     align-items: center;
 }
-section.contact .contact-me .left .card .icon i{
+
+section.contact .contact-me .left .card .icon i {
     font-size: 2rem;
     margin-right: 15px;
 }
 
 
 
-section.contact .contact-me .right form{
+section.contact .contact-me .right form {
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
     padding: 1rem;
 }
-section.contact .contact-me .right .form-group{
+
+section.contact .contact-me .right .form-group {
     margin-bottom: 1.25rem;
 }
-section.contact .contact-me .right .form-group label{
+
+section.contact .contact-me .right .form-group label {
     display: block;
 }
 
 /*input요소, textarea요소, button요소 꾸미기*/
-section.contact .contact-me .right .form-group input{
+section.contact .contact-me .right .form-group input {
     width: 100%;
-    padding:10px;
+    padding: 10px;
     outline: none;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
-section.contact .contact-me .right .form-group textarea{
+
+section.contact .contact-me .right .form-group textarea {
     width: 100%;
-    padding:10px;
+    padding: 10px;
     resize: none;
     outline: none;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
-section.contact .contact-me .right button{
+
+section.contact .contact-me .right button {
     width: 100%;
     padding: 1rem;
     background-color: #f78b00;
@@ -376,15 +409,156 @@ section.contact .contact-me .right button{
 }
 
 /*요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가*/
-section.contact .contact-me .right .form-group input:focus{
+section.contact .contact-me .right .form-group input:focus {
     border: 1px solid #719ECE;
     box-shadow: 0 0 10px #719ECE;
 }
-section.contact .contact-me .right .form-group textarea:focus{
+
+section.contact .contact-me .right .form-group textarea:focus {
     border: 1px solid #719ECE;
     box-shadow: 0 0 10px #719ECE;
 }
+
 /*요소에 커서를 갖다대면 배경색 변경*/
-section.contact .contact-me .right button:hover{
+section.contact .contact-me .right button:hover {
     background-color: #f7b55e;
+}
+
+
+/*미디어쿼리 이용해 반응형 코드 작성하기*/
+@media screen and (max-width:1140px) {
+
+    /*메인영역 container기준 너비 변경 1140px -> 992px*/
+    main .container {
+        width: 992px;
+    }
+
+    /*섹션영역 container기준 너비 변경 (2단으로 처리하기 위한 적정 너비) 1140px -> 600px*/
+    section .container {
+        width: 600px;
+    }
+
+    /*About Me 영역*/
+    section .about-self .left {
+        /*About Me 영역 왼쪽 너비 50% -> 100% 변경*/
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    section .about-self .right {
+        /*About Me 영역 왼쪽 너비 50% -> 100% 변경*/
+        width: 100%;
+        padding: 0;
+    }
+
+    /*What I Do 영역*/
+    section .do-me {
+        flex-wrap: wrap;
+    }
+
+    section .do-me .do-inner {
+        /*What I Do 영역 본문 사각형 너비 30% -> 48% 변경*/
+        width: 48%;
+        /*What I Do 영역 본문 사각형 사이에 간격 지정*/
+        margin-bottom: 1.5rem;
+    }
+
+    /*PortFolio 영역*/
+    section .portfolio-me .portfolio-inner {
+        /*What I Do 영역 본문 사각형 너비 30% -> 48% 변경*/
+        width: 48%;
+        /*What I Do 영역 본문 사각형 사이에 간격 지정*/
+        margin-bottom: 1.5rem;
+    }
+
+    /*Contact With Me 영역*/
+    section.contact .contact-me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.contact .contact-me .left {
+        width: 100%;
+    }
+
+    section.contact .contact-me .right {
+        width: 100%;
+    }
+}
+
+/*992px*/
+@media screen and (max-width:992px) {
+    html {
+        font-size: 14px;
+    }
+    /*메인영역 container기준 너비 변경 992px -> 768px*/
+    main .container {
+        width: 768px;
+    }
+}
+/*768px*/
+@media screen and (max-width:768px) {
+    html {
+        font-size: 13px;
+    }
+    /*메인영역 container기준 너비 변경 768px -> 576px*/
+    main .container {
+        width: 576px;
+    }
+    /*섹션영역 container기준 너비 변경 600px -> 400px*/
+    section .container{
+        width: 400px;
+    }
+    /*섹션영역 do-me*/
+    section .do-me{
+        display: flex;
+        flex-direction: column;
+    }
+    section .do-me .do-inner{
+        width: 100%;
+        padding: 3rem;
+    }
+    /*섹션영역 portfolio-me*/
+    section .portfolio-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section .portfolio-me .portfolio-inner{
+        width: 70%;
+    }
+}
+
+/*576px*/
+@media screen and (max-width:576px) {
+    html {
+        font-size: 12px;
+    }
+    /*메인영역 container기준 너비 변경 576px -> 400px*/
+    main .container {
+        width: 400px;
+    }
+    /*섹션영역 container기준 너비 변경 400px -> 360px*/
+    section .container {
+        width: 360px;
+    }
+}
+
+/*400px*/
+@media screen and (max-width:400px) {
+    html {
+        font-size: 11px;
+    }
+    main .container {
+        width: 300px;
+    }
+    section .container{
+        width: 320px;
+    }
+    main h4{
+        font-size: 1.5rem;
+    }
+    main .title h2{
+        font-family: 3rem; /*3.5rem -> 3rem*/
+    }
 }
